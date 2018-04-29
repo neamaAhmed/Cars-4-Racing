@@ -2627,7 +2627,6 @@ MonoBehaviour:
   m_RevRangeBoundary: 1
   m_SlipLimit: 0.3
   m_BrakeTorque: 20000
-  speed: 0
 --- !u!114 &499565425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3036,7 +3035,6 @@ MonoBehaviour:
   m_RevRangeBoundary: 1
   m_SlipLimit: 0.3
   m_BrakeTorque: 20000
-  speed: 0
 --- !u!114 &531643498
 MonoBehaviour:
   m_ObjectHideFlags: 0
