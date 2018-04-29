@@ -18,7 +18,7 @@ public class LapComplete : MonoBehaviour
     public GameObject LapCounter;
     public GameObject CarControl;
     public int LapsDone;
-    public float mytime = 1f; 
+    //public float mytime = 1f; 
     void OnTriggerEnter()
     {
         
@@ -50,14 +50,14 @@ public class LapComplete : MonoBehaviour
         LapCompleteTrig.SetActive(false);
         LapsDone += 1;
 
-        mytime -=1* Time.deltaTime;
-        CarControl.GetComponent<Rigidbody>().velocity *= 2 ^ 2;
-        if (mytime <= 0) {
-            //CarControl.GetComponent<Rigidbody>().velocity /= 2 ^ 5;
-            UnityEngine.Debug.Log("Returned");
-        }
+        //mytime -=1* Time.deltaTime;
+        //CarControl.GetComponent<Rigidbody>().velocity *= 2 ^ 2;
+        //if (mytime <= 0) {
+        //    //CarControl.GetComponent<Rigidbody>().velocity /= 2 ^ 5;
+        //    UnityEngine.Debug.Log("Returned");
+        //}
         //CarController.speed = 1000;
-        UnityEngine.Debug.Log(CarControl.GetComponent<Rigidbody>().velocity.magnitude * 2.23693629f);
+        //UnityEngine.Debug.Log(CarControl.GetComponent<Rigidbody>().velocity.magnitude * 2.23693629f);
         //WaitForSeconds timer = new WaitForSeconds(2);
         if (LapsDone == 3)
         {
