@@ -21,36 +21,21 @@ public class Nav : MonoBehaviour {
 
     void Update()
     {
-        if (currentTarget == 2)
-        {
-            currentTarget = 0;
-            Debug.Log("Zeroooo");
-        }
         //Debug.Log("Inside Second If3 ");
         float dist = Vector3.Distance(this.transform.position, destinations[currentTarget].position);
-        //Debug.Log(dist);
-        if (dist <= 25)
+        if (dist <= 10)
         {
             
             Debug.Log(currentTarget);
+            if (currentTarget == 2)
+            {
+                currentTarget = 0;
+                Debug.Log("Zeroooo");
+            }
             agent.SetDestination(destinations[currentTarget].position); // set next target
-            //currentTarget++;
-        }
-        int new_target;
-        if (currentTarget == 0)
-        {
-            new_target = 1;
-        }
-        else {
-            new_target = 0;
-        }
-        float dist2 = Vector3.Distance(this.transform.position, destinations[new_target].position);
-        if (dist2 <= 25)
-        {
-            //Debug.Log();
             currentTarget++;
         }
-
+        
         //Debug.Log("Inside First If ");
         //Debug.Log(currentTarget);
         // Use this if statement condition if you want your AI to patrol
